@@ -313,6 +313,18 @@ body {
   stroke: var(--color-Royal-Purple);
 }
 
+.menu__btn--active {
+  color: var(--color-Royal-Purple);
+}
+
+.menu__btn--active path {
+  stroke: var(--color-Royal-Purple);
+}
+
+.menu__btn--active svg {
+  transform: rotate(180deg);
+}
+
 .menu__item {
   position: relative;
   outline: none;
@@ -348,7 +360,6 @@ body {
 .dropdown__item {
   position: relative;
   margin-bottom: 20px;
-  padding: 9px 14px;
   width: 220px;
   min-height: 40px;
   font-weight: 600;
@@ -356,7 +367,7 @@ body {
   line-height: 19px;
   background-color: rgba(0, 0, 0, 0.8);
   color: var(--color-white);
-  outline: none;
+  outline: transparent;
 }
 
 .dropdown__item_img_1_1 {
@@ -458,36 +469,27 @@ body {
 }
 
 .dropdown__link {
-  display: block;
-  width: 100%;
-  height: 100%;
-  outline: none;
-}
-
-.dropdown__link::before {
-  content: "";
   position: absolute;
-  top: 0;
-  bottom: 0;
   left: 0;
   right: 0;
-  border: transparent;
+  top: 0;
+  bottom: 0;
+  padding: 9px 14px;
   outline: transparent;
-  transition: outline 0.3s ease-in-out, background-color 0.3s ease-in-out;
+  border: 2px solid transparent;
+  transition: outline 0.3s ease-in-out, background-color 0.3s ease-in-out, border-color 0.3s ease-in-out;
 }
 
-.dropdown__link:focus-visible::before {
-  outline: 2px solid var(--color-Amethyst);
-  outline-offset: -2px;
+.dropdown__link:focus-visible {
+  border-color: var(--color-Amethyst);
 }
 
-.dropdown__link:hover:not(:focus-visible)::before {
-  outline: 2px solid var(--color-Amethyst);
-  outline-offset: -2px;
+.dropdown__link:hover:not(:focus-visible) {
+  border-color: var(--color-Amethyst);
 }
 
-.dropdown__link:active:not(:focus-visible)::before {
-  outline: none;
+.dropdown__link:active:not(:focus-visible) {
+  border-color: transparent;
   background-color: rgba(194, 131, 243, 0.4);
 }
 
@@ -558,6 +560,7 @@ body {
 
 .hero__desc {
   margin: 0;
+  margin-bottom: 20px;
   max-width: 556px;
   font-weight: 700;
   font-size: 18px;
@@ -566,6 +569,30 @@ body {
 }
 
 .hero__btn {
+  width: 314px;
+  min-height: 70px;
+  color: var(--color-white);
+  background-color: var(--color-Amethyst);
+  outline: transparent;
+  border: 3px solid transparent;
+  transition: background-color 0.3s ease-in-out, border-color 0.3s ease-in-out, outline 0.3s ease-in-out;
+}
+
+.hero__btn:focus-visible {
+  outline: 3px solid var(--color-Heliotrope);
+  outline-offset: 5px;
+}
+
+.hero__btn:hover:not(:focus-visible) {
+  border-color: var(--color-Biloba-Flower);
+}
+
+.hero__btn:active:not(:focus-visible) {
+  border-color: var(--color-Biloba-Flower);
+  background-color: var(--color-Royal-Purple);
+}
+
+/* .hero__btn {
   width: 314px;
   min-height: 70px;
   color: var(--color-white);
@@ -585,7 +612,7 @@ body {
 .hero__btn:active:not(:focus-visible) {
   outline: 3px solid var(--color-Biloba-Flower);
   background-color: var(--color-Royal-Purple);
-}
+} */
 
 .hero__swiper {
   position: absolute;
@@ -705,17 +732,12 @@ body {
   transition: background-color 0.3s ease-in-out;
 }
 
-.choices:focus-visible {
-  background-color: rgba(255, 255, 255, 0.2);
-}
-
-.choices:hover:not(:focus-visible) {
-  background-color: rgba(255, 255, 255, 0.2);
-}
-
-.choices,
 .choices__list--dropdown .choices__item--selectable.is-highlighted {
   transition: background-color 0.3s ease-in-out;
+}
+
+.choices:focus-visible {
+  background-color: rgba(255, 255, 255, 0.2);
 }
 
 .choices:hover:not(:focus-visible),
@@ -733,6 +755,7 @@ body {
   width: 100%;
   min-height: 40px;
   background-color: transparent;
+  border: none;
 }
 
 .choices[data-type*=select-one] .choices__inner {
@@ -781,6 +804,7 @@ body {
 
 .choices__list--dropdown {
   background-color: transparent;
+  border-top: none;
 }
 
 .choices__list--dropdown .choices__item--selectable.is-highlighted {
@@ -1052,10 +1076,12 @@ body {
 }
 
 .catalog__box {
-  gap: var(--gap)
+  display: flex;
+  width: 100%;
+  gap: var(--gap);
 }
 
-.catalog__wrapper {
+.tabs__wrapper {
   width: calc(50% - var(--gap));
 }
 
@@ -1090,7 +1116,8 @@ body {
   line-height: 22px;
   color: var(--color-Amethyst);
   outline: none;
-  transition: background-color 0.3s ease-in-out, color 0.3s ease-in-out, border-bottom 0.3s ease-in-out;
+  border-bottom: 1px solid transparent;
+  transition: background-color 0.3s ease-in-out, color 0.3s ease-in-out, border-color 0.3s ease-in-out;
 }
 
 .catalog__link:focus-visible {
@@ -1100,12 +1127,12 @@ body {
 
 .catalog__link:hover:not(:focus-visible) {
   color: var(--color-Royal-Purple);
-  border-bottom: 1px solid var(--color-Royal-Purple);
+  border-color: var(--color-Royal-Purple);
 }
 
 .catalog__link:active:not(:focus-visible) {
   color: var(--color-black);
-  border-bottom: 1px solid var(--color-black);
+  border-color: var(--color-black);
 }
 
 .catalog__wrap {
@@ -1227,7 +1254,8 @@ body {
 }
 
 .tabs__btn {
-  transition: color 0.3s ease-in-out, background-color 0.3s ease-in-out, border-bottom 0.3s ease-in-out;
+  border-bottom: 1px solid transparent;
+  transition: color 0.3s ease-in-out, background-color 0.3s ease-in-out, border-color 0.3s ease-in-out;
 }
 
 .tabs__btn:focus-visible {
@@ -1236,7 +1264,7 @@ body {
 
 .tabs__btn:hover:not(:focus-visible) {
   color: var(--color-Amethyst);
-  border-bottom: 1px solid var(--color-Amethyst);
+  border-color: var(--color-Amethyst);
 }
 
 .tabs__btn:active:not(:focus-visible) {
@@ -1289,7 +1317,8 @@ body {
   line-height: 22px;
   color: var(--color-Amethyst);
   outline: none;
-  transition: background-color 0.3s ease-in-out, color 0.3s ease-in-out, border-bottom 0.3s ease-in-out;
+  border-bottom: 1px solid transparent;
+  transition: background-color 0.3s ease-in-out, color 0.3s ease-in-out, border-color 0.3s ease-in-out;
 }
 
 .empty-list__link:focus-visible {
@@ -1299,12 +1328,12 @@ body {
 
 .empty-list__link:hover:not(:focus-visible) {
   color: var(--color-Royal-Purple);
-  border-bottom: 1px solid var(--color-Royal-Purple);
+  border-color: var(--color-Royal-Purple);
 }
 
 .empty-list__link:active:not(:focus-visible) {
   color: var(--color-black);
-  border-bottom: 1px solid var(--color-black);
+  border-color: var(--color-black);
 }
 
 /* Events */
@@ -1545,8 +1574,8 @@ body {
 .projects__lnk {
   color: var(--color-Amethyst);
   outline: none;
-  border: none;
-  transition: color 0.3s ease-in-out, background-color 0.3s ease-in-out;
+  border-bottom: 1px solid transparent;
+  transition: color 0.3s ease-in-out, background-color 0.3s ease-in-out, border-color 0.3s ease-in-out;
 }
 
 .projects__lnk:focus-visible {
@@ -1555,12 +1584,12 @@ body {
 }
 
 .projects__lnk:hover:not(:focus-visible) {
-  border-bottom: 1px solid var(--color-Amethyst);
+  border-color: var(--color-Amethyst);
 }
 
 .projects__lnk:active:not(:focus-visible) {
   color: var(--color-Royal-Purple);
-  border-bottom: 1px solid var(--color-Royal-Purple);
+  border-color: var(--color-Royal-Purple);
 }
 
 .projects__subtitle {
@@ -1746,7 +1775,7 @@ body {
   color: var(--color-Amethyst);
   border: 2px solid var(--color-Amethyst);
   border-radius: 100px;
-  transition: background-color 0.3s ease-in-out, outline 0.3s ease-in-out, color 0.3s ease-in-out;
+  transition: background-color 0.3s ease-in-out, outline 0.3s ease-in-out, color 0.3s ease-in-out, border-color 0.3s ease-in-out;
 }
 
 .contacts__btn:focus-visible {
@@ -1761,7 +1790,7 @@ body {
 
 .contacts__btn:active:not(:focus-visible) {
   color: var(--color-white);
-  outline: 3px solid var(--color-Biloba-Flower);
+  border-color: var(--color-Biloba-Flower);
   background-color: var(--color-Royal-Purple);
 }
 

@@ -334,9 +334,9 @@
             Галерея
           </h2>
           <div class="gallery__inner flex">
-            <h4 class="gallery__subject">
+            <span class="gallery__subject">
               Фильтр:
-            </h4>
+            </span>
             <select name="select" class="select">
               <option value="Живопись">Живопись</option>
               <option value="Рисунок">Рисунок</option>
@@ -596,106 +596,111 @@
           лишь частью общей картины, стремящиеся вытеснить традиционное производство, нанотехнологии и&nbsp;по&nbsp;сей
           день остаются уделом либералов, которые жаждут быть функционально разнесены на&nbsp;независимые элементы.
         </p>
-        <div class="tabs catalog__box flex">
-          <div id="Domenico" class="catalog__wrapper tabs__content tabs__content--active" data-tabs-target="Domenico">
-            <picture class="catalog__picture">
-              <img src="img/catalog_img_1920.jpg" alt="Доменико Гирландайо">
-            </picture>
-            <h3 class="catalog__personality">
-              Доменико Гирландайо
-            </h3>
-            <p class="catalog__dates">
-              2&nbsp;июня 1448&ndash;11 января 1494
-            </p>
-            <p class="catalog__text">
-              Один из&nbsp;ведущих флорентийских художников Кватроченто, основатель художественной династии, которую
-              продолжили его брат Давид и&nbsp;сын Ридольфо. Глава художественной мастерской, где юный Микеланджело
-              в&nbsp;течение года овладевал профессиональными навыками. Автор фресковых циклов, в&nbsp;которых выпукло,
-              со&nbsp;всевозможными подробностями показана домашняя жизнь библейских персонажей (в&nbsp;их&nbsp;роли
-              выступают знатные граждане Флоренции в&nbsp;костюмах того времени).
-            </p>
-          </div>
-          <div id="Benedetto" class="catalog__wrapper tabs__content tabs__content" data-tabs-target="Benedetto">
-            <picture class="catalog__picture">
-              <img src="img/catalog_img_1920-копия.jpg" alt="">
-            </picture>
-            <h3 class="catalog__personality">
-              Бенедетто ди Биндо
-            </h3>
-            <p class="catalog__dates">
-              около 1385–1417
-            </p>
-            <p class="catalog__text">
-              Итальянский живописец сиенской школы итало-византийского и&nbsp;готического искусства. Творчество
-              Бенедетто ди&nbsp;Биндо протекало в&nbsp;русле предначертанном Симоне Мартини. Специалисты
-              полагают, что он&nbsp;был учеником Паоло ди&nbsp;Джованни Феи. В&nbsp;ранних его работах ощущается
-              подражание Таддео ди&nbsp;Бартоло. Бенедетто ди&nbsp;Биндо приписывают авторство фрески &laquo;Вознесение
-              Марии&raquo; в&nbsp;церкви Сан Никколо дель Кармине в&nbsp;Сиене, диптих &laquo;Мадонна Умиление&raquo;
-              или &laquo;Пресвятая Дева Мария с&nbsp;младенцем и&nbsp;святой Иероним, переводящий евангелие
-              от&nbsp;Иоанна&raquo; (1400&ndash;1405, Филадельфия, Музей изобразительного искусства), а&nbsp;также
-              несколько станковых произведений, хранящихся в&nbsp;разных музеях. Умер сиенский живописец Бенедетто
-              ди&nbsp;Биндо 19&nbsp;сентября 1417&nbsp;в Перудже.
-            </p>
-          </div>
-          <div id="Bergognone" class="catalog__wrapper tabs__content tabs__content"
-            data-tabs-target="Bergognone, Ambrogio">
-            <picture class="catalog__picture">
-              <img src="img/catalog_img_1920-копия.jpg" alt="">
-            </picture>
-            <h3 class="catalog__personality">
-              Бергоньоне, Амброджо
-            </h3>
-            <p class="catalog__dates">
-              1453-1523
-            </p>
-            <p class="catalog__text">
-              Прозвище говорит о&nbsp;его тяготении к&nbsp;бургундской школе, по&nbsp;манере ему близок Винченцо Фоппа.
-              Испытал влияние Леонардо да&nbsp;Винчи. Наиболее известен работами 1486&ndash;1494&nbsp;в монастырской
-              обители картезианцев Чертоза ди&nbsp;Павия. Позднее работал в&nbsp;Милане в&nbsp;базилике Сант-Эусторджо
-              и&nbsp;церкви Сан-Сатиро, после 1497&nbsp;&mdash; в&nbsp;Лоди, в&nbsp;1512&nbsp;&mdash; в&nbsp;Бергамо,
-              незадолго до&nbsp;смерти&nbsp;&mdash; снова в&nbsp;Милане, в&nbsp;базилике Сан-Симпличано.
+        <div class="tabs catalog__box">
+          <div id="tabs" class="tabs__wrapper">
+            <div id="Domenico" class="catalog__wrapper tabs__content tabs__content--active" data-tabs-target="Domenico">
+              <picture class="catalog__picture">
+                <img src="img/catalog_img_1920.jpg" alt="Доменико Гирландайо">
+              </picture>
+              <h3 class="catalog__personality">
+                Доменико Гирландайо
+              </h3>
+              <p class="catalog__dates">
+                2&nbsp;июня 1448&ndash;11 января 1494
+              </p>
+              <p class="catalog__text">
+                Один из&nbsp;ведущих флорентийских художников Кватроченто, основатель художественной династии, которую
+                продолжили его брат Давид и&nbsp;сын Ридольфо. Глава художественной мастерской, где юный Микеланджело
+                в&nbsp;течение года овладевал профессиональными навыками. Автор фресковых циклов, в&nbsp;которых
+                выпукло,
+                со&nbsp;всевозможными подробностями показана домашняя жизнь библейских персонажей (в&nbsp;их&nbsp;роли
+                выступают знатные граждане Флоренции в&nbsp;костюмах того времени).
+              </p>
+            </div>
+            <div id="Benedetto" class="catalog__wrapper tabs__content tabs__content" data-tabs-target="Benedetto">
+              <picture class="catalog__picture">
+                <img src="img/catalog_img_1920-копия.jpg" alt="">
+              </picture>
+              <h3 class="catalog__personality">
+                Бенедетто ди Биндо
+              </h3>
+              <p class="catalog__dates">
+                около 1385–1417
+              </p>
+              <p class="catalog__text">
+                Итальянский живописец сиенской школы итало-византийского и&nbsp;готического искусства. Творчество
+                Бенедетто ди&nbsp;Биндо протекало в&nbsp;русле предначертанном Симоне Мартини. Специалисты
+                полагают, что он&nbsp;был учеником Паоло ди&nbsp;Джованни Феи. В&nbsp;ранних его работах ощущается
+                подражание Таддео ди&nbsp;Бартоло. Бенедетто ди&nbsp;Биндо приписывают авторство фрески
+                &laquo;Вознесение
+                Марии&raquo; в&nbsp;церкви Сан Никколо дель Кармине в&nbsp;Сиене, диптих &laquo;Мадонна Умиление&raquo;
+                или &laquo;Пресвятая Дева Мария с&nbsp;младенцем и&nbsp;святой Иероним, переводящий евангелие
+                от&nbsp;Иоанна&raquo; (1400&ndash;1405, Филадельфия, Музей изобразительного искусства), а&nbsp;также
+                несколько станковых произведений, хранящихся в&nbsp;разных музеях. Умер сиенский живописец Бенедетто
+                ди&nbsp;Биндо 19&nbsp;сентября 1417&nbsp;в Перудже.
+              </p>
+            </div>
+            <div id="Bergognone" class="catalog__wrapper tabs__content" data-tabs-target="Bergognone, Ambrogio">
+              <picture class="catalog__picture">
+                <img src="img/catalog_img_1920-копия.jpg" alt="">
+              </picture>
+              <h3 class="catalog__personality">
+                Бергоньоне, Амброджо
+              </h3>
+              <p class="catalog__dates">
+                1453-1523
+              </p>
+              <p class="catalog__text">
+                Прозвище говорит о&nbsp;его тяготении к&nbsp;бургундской школе, по&nbsp;манере ему близок Винченцо
+                Фоппа.
+                Испытал влияние Леонардо да&nbsp;Винчи. Наиболее известен работами 1486&ndash;1494&nbsp;в монастырской
+                обители картезианцев Чертоза ди&nbsp;Павия. Позднее работал в&nbsp;Милане в&nbsp;базилике Сант-Эусторджо
+                и&nbsp;церкви Сан-Сатиро, после 1497&nbsp;&mdash; в&nbsp;Лоди, в&nbsp;1512&nbsp;&mdash; в&nbsp;Бергамо,
+                незадолго до&nbsp;смерти&nbsp;&mdash; снова в&nbsp;Милане, в&nbsp;базилике Сан-Симпличано.
 
-              Его завещание датировано 4&nbsp;апреля 1523, в&nbsp;том&nbsp;же году он&nbsp;умер. Одним из&nbsp;его
-              учеников считают Бернардино Луини.
-            </p>
-          </div>
-          <div id="Bissolo" class="catalog__wrapper tabs__content tabs__content" data-tabs-target="Bissolo, Francesco">
-            <picture class="catalog__picture">
-              <img src="img/catalog_img_1920-копия.jpg" alt="">
-            </picture>
-            <h3 class="catalog__personality">
-              Биссоло, Франческо
-            </h3>
-            <p class="catalog__dates">
-              1470-1554
-            </p>
-            <p class="catalog__text">
-              Сын художника. Ученик Джованни Беллини. С&nbsp;1490 переехал в&nbsp;мастерскую Беллини. С&nbsp;1492
-              по&nbsp;1530 год работал в&nbsp;Венеции. Помогал учителю в&nbsp;работе над украшением Большого зала Совета
-              Дворца дожей (Венеция). Принимал участие в&nbsp;создании украшений Церкви Иль Реденторе в&nbsp;Венеции.
+                Его завещание датировано 4&nbsp;апреля 1523, в&nbsp;том&nbsp;же году он&nbsp;умер. Одним из&nbsp;его
+                учеников считают Бернардино Луини.
+              </p>
+            </div>
+            <div id="Bissolo" class="catalog__wrapper tabs__content" data-tabs-target="Bissolo, Francesco">
+              <picture class="catalog__picture">
+                <img src="img/catalog_img_1920-копия.jpg" alt="">
+              </picture>
+              <h3 class="catalog__personality">
+                Биссоло, Франческо
+              </h3>
+              <p class="catalog__dates">
+                1470-1554
+              </p>
+              <p class="catalog__text">
+                Сын художника. Ученик Джованни Беллини. С&nbsp;1490 переехал в&nbsp;мастерскую Беллини. С&nbsp;1492
+                по&nbsp;1530 год работал в&nbsp;Венеции. Помогал учителю в&nbsp;работе над украшением Большого зала
+                Совета
+                Дворца дожей (Венеция). Принимал участие в&nbsp;создании украшений Церкви Иль Реденторе в&nbsp;Венеции.
 
-              Художник эпохи Возрождения.
+                Художник эпохи Возрождения.
 
-              В&nbsp;своём творчестве подражал Джорджоне.
+                В&nbsp;своём творчестве подражал Джорджоне.
 
-              Работы художника хранятся ныне во&nbsp;многих музеях мира. В&nbsp;санкт-петербургском Эрмитаже находится
-              его картина &laquo;Богоматерь с&nbsp;Младенцем Христом&raquo;. В&nbsp;Британской Национальной
-              галерее&nbsp;&mdash; &laquo;Мадонна с&nbsp;Младенцем со&nbsp;святыми и&nbsp;донатором&raquo;. Ряд его
-              полотен находится в&nbsp;музеях Варшавы, Лос-Анджелеса (Музей Нортона Саймона и&nbsp;Los Angeles County
-              Museum of&nbsp;Art), Дэйтоновском институте искусств (штат Огайо, США) и&nbsp;др.
-            </p>
-          </div>
-          <div id="Page" class="catalog__wrapper tabs__content tabs__content" data-tabs-target="Page">
-            <picture class="catalog__picture">
-              <img src="img/catalog-X-1920.jpg" alt="">
-            </picture>
-            <h3 class="catalog__personality">
-              Что мы&nbsp;о&nbsp;нём знаем?
-            </h3>
-            <p class="catalog__text">
-              Пока ничего... Зато мы&nbsp;точно знаем, что в&nbsp;галерее есть на&nbsp;что посмотреть!
-            </p>
-            <a href="#gallery" class="catalog__link scrollto" aria-label="В галерею">В&nbsp;галерею</a>
+                Работы художника хранятся ныне во&nbsp;многих музеях мира. В&nbsp;санкт-петербургском Эрмитаже находится
+                его картина &laquo;Богоматерь с&nbsp;Младенцем Христом&raquo;. В&nbsp;Британской Национальной
+                галерее&nbsp;&mdash; &laquo;Мадонна с&nbsp;Младенцем со&nbsp;святыми и&nbsp;донатором&raquo;. Ряд его
+                полотен находится в&nbsp;музеях Варшавы, Лос-Анджелеса (Музей Нортона Саймона и&nbsp;Los Angeles County
+                Museum of&nbsp;Art), Дэйтоновском институте искусств (штат Огайо, США) и&nbsp;др.
+              </p>
+            </div>
+            <div id="Page" class="catalog__wrapper tabs__content" data-tabs-target="Page">
+              <picture class="catalog__picture">
+                <img src="img/catalog-X-1920.jpg" alt="">
+              </picture>
+              <h3 class="catalog__personality">
+                Что мы&nbsp;о&nbsp;нём знаем?
+              </h3>
+              <p class="catalog__text">
+                Пока ничего... Зато мы&nbsp;точно знаем, что в&nbsp;галерее есть на&nbsp;что посмотреть!
+              </p>
+              <a href="#gallery" class="catalog__link scrollto" aria-label="В галерею">В&nbsp;галерею</a>
+            </div>
           </div>
           <div class="catalog__wrap">
             <ul class="list-reset catalog__list">
@@ -720,56 +725,58 @@
                 </h4>
                 <div class="catalog__content">
                   <ul class="list-reset tabs__list catalog__descr">
-                    <li class="tabs__item"><a href="#Benedetto" class="btn-reset tabs__btn" data-tabs-path="Benedetto"
-                        aria-label="Бенедетто ди Биндо">Бенедетто ди Биндо</a></li>
-                    <li class="tabs__item"><a href="#Bergognone" class="btn-reset tabs__btn"
-                        data-tabs-path="Bergognone, Ambrogio" aria-label="Бергоньоне, Амброджо">Бергоньоне, Амброджо</a>
+                    <li class="tabs__item"><button class="btn-reset tabs__btn tabs__btn_Benedetto"
+                        data-tabs-path="Benedetto" aria-label="Бенедетто ди Биндо">Бенедетто ди Биндо</button></li>
+                    <li class="tabs__item"><button class="btn-reset tabs__btn tabs__btn_Bergognone"
+                        data-tabs-path="Bergognone, Ambrogio" aria-label="Бергоньоне, Амброджо">Бергоньоне,
+                        Амброджо</button>
                     </li>
-                    <li class="tabs__item"><a href="#Bissolo" class="btn-reset tabs__btn"
-                        data-tabs-path="Bissolo, Francesco" aria-label="Биссоло, Франческо">Биссоло, Франческо</a></li>
-                    <li class="tabs__item"><a href="#Page" class="btn-reset tabs__btn" data-tabs-path="Page"
-                        aria-label="Больтраффио, Джованни">Больтраффио, Джованни</a></li>
-                    <li class="tabs__item"><a href="#Page" class="btn-reset tabs__btn" data-tabs-path="Page"
-                        aria-label="Бонсиньори, Франческо">Бонсиньори, Франческо</a></li>
-                    <li class="tabs__item"><a href="#Page" class="btn-reset tabs__btn" data-tabs-path="Page"
-                        aria-label="Боттичини, Рафаэлло">Боттичини, Рафаэлло</a></li>
-                    <li class="tabs__item"><a href="#Page" class="btn-reset tabs__btn" data-tabs-path="Page"
-                        aria-label="Брамантино">Брамантино</a></li>
-                    <li class="tabs__item"><a href="#Page" class="btn-reset tabs__btn" data-tabs-path="Page"
-                        aria-label="Бреа, Людовико">Бреа, Людовико</a></li>
-                    <li class="tabs__item"><a href="#Page" class="btn-reset tabs__btn" data-tabs-path="Page"
-                        aria-label="Бьяджо д’Антонио Туччи">Бьяджо д’Антонио Туччи</a></li>
-                    <li class="tabs__item"><a href="#Page" class="btn-reset tabs__btn" data-tabs-path="Page"
-                        aria-label="Веккьетта">Веккьетта</a></li>
-                    <li class="tabs__item"><a href="#Page" class="btn-reset tabs__btn" data-tabs-path="Page"
-                        aria-label="Андреа Верроккьо">Андреа Верроккьо</a></li>
-                    <li class="tabs__item"><a href="#Domenico" class="btn-reset tabs__btn tabs__btn--active"
+                    <li class="tabs__item"><button class="btn-reset tabs__btn tabs__btn_Bissolo"
+                        data-tabs-path="Bissolo, Francesco" aria-label="Биссоло, Франческо">Биссоло, Франческо</button>
+                    </li>
+                    <li class="tabs__item"><button class="btn-reset tabs__btn tabs__btn_Page" data-tabs-path="Page"
+                        aria-label="Больтраффио, Джованни">Больтраффио, Джованни</button></li>
+                    <li class="tabs__item"><button class="btn-reset tabs__btn tabs__btn_Page" data-tabs-path="Page"
+                        aria-label="Бонсиньори, Франческо">Бонсиньори, Франческо</button></li>
+                    <li class="tabs__item"><button class="btn-reset tabs__btn tabs__btn_Page" data-tabs-path="Page"
+                        aria-label="Боттичини, Рафаэлло">Боттичини, Рафаэлло</button></li>
+                    <li class="tabs__item"><button class="btn-reset tabs__btn tabs__btn_Page" data-tabs-path="Page"
+                        aria-label="Брамантино">Брамантино</button></li>
+                    <li class="tabs__item"><button class="btn-reset tabs__btn tabs__btn_Page" data-tabs-path="Page"
+                        aria-label="Бреа, Людовико">Бреа, Людовико</button></li>
+                    <li class="tabs__item"><button class="btn-reset tabs__btn tabs__btn_Page" data-tabs-path="Page"
+                        aria-label="Бьяджо д’Антонио Туччи">Бьяджо д’Антонио Туччи</button></li>
+                    <li class="tabs__item"><button class="btn-reset tabs__btn tabs__btn_Page" data-tabs-path="Page"
+                        aria-label="Веккьетта">Веккьетта</button></li>
+                    <li class="tabs__item"><button class="btn-reset tabs__btn tabs__btn_Page" data-tabs-path="Page"
+                        aria-label="Андреа Верроккьо">Андреа Верроккьо</button></li>
+                    <li class="tabs__item"><button class="btn-reset tabs__btn tabs__btn_Domenico tabs__btn--active"
                         data-tabs-path="Domenico" aria-label="Доменико Гирландайо">Доменико
-                        Гирландайо</a></li>
-                    <li class="tabs__item"><a href="#Page" class="btn-reset tabs__btn" data-tabs-path="Page"
-                        aria-label="Беноццо Гоццоли">Беноццо Гоццоли</a></li>
-                    <li class="tabs__item"><a href="#Page" class="btn-reset tabs__btn" data-tabs-path="Page"
-                        aria-label="Граначчи, Франческо">Граначчи, Франческо</a></li>
-                    <li class="tabs__item"><a href="#Page" class="btn-reset tabs__btn" data-tabs-path="Page"
-                        aria-label="Грегорио ди Чекко">Грегорио ди&nbsp;Чекко</a></li>
-                    <li class="tabs__item"><a href="#Page" class="btn-reset tabs__btn" data-tabs-path="Page"
-                        aria-label="Джованни да&nbsp;Удине">Джованни да&nbsp;Удине</a></li>
-                    <li class="tabs__item"><a href="#Page" class="btn-reset tabs__btn" data-tabs-path="Page"
-                        aria-label="Джованни ди&nbsp;Паоло">Джованни ди&nbsp;Паоло</a></li>
-                    <li class="tabs__item"><a href="#Page" class="btn-reset tabs__btn" data-tabs-path="Page"
-                        aria-label="Джорджоне">Джорджоне</a></li>
-                    <li class="tabs__item"><a href="#Page" class="btn-reset tabs__btn" data-tabs-path="Page"
-                        aria-label="Парентино, Бернардо">Парентино, Бернардо</a></li>
-                    <li class="tabs__item"><a href="#Page" class="btn-reset tabs__btn" data-tabs-path="Page"
-                        aria-label="Пезеллино">Пезеллино</a></li>
-                    <li class="tabs__item"><a href="#Page" class="btn-reset tabs__btn" data-tabs-path="Page"
-                        aria-label="Пьетро Перуджино">Пьетро Перуджино</a></li>
-                    <li class="tabs__item"><a href="#Page" class="btn-reset tabs__btn" data-tabs-path="Page"
-                        aria-label="Перуцци, Бальдассаре">Перуцци, Бальдассаре</a></li>
-                    <li class="tabs__item"><a href="#Page" class="btn-reset tabs__btn" data-tabs-path="Page"
-                        aria-label="Пизанелло">Пизанелло</a></li>
-                    <li class="tabs__item"><a href="#Page" class="btn-reset tabs__btn" data-tabs-path="Page"
-                        aria-label="Пинтуриккьо">Пинтуриккьо</a></li>
+                        Гирландайо</button></li>
+                    <li class="tabs__item"><button class="btn-reset tabs__btn tabs__btn_Page" data-tabs-path="Page"
+                        aria-label="Беноццо Гоццоли">Беноццо Гоццоли</button></li>
+                    <li class="tabs__item"><button class="btn-reset tabs__btn tabs__btn_Page" data-tabs-path="Page"
+                        aria-label="Граначчи, Франческо">Граначчи, Франческо</button></li>
+                    <li class="tabs__item"><button class="btn-reset tabs__btn tabs__btn_Page" data-tabs-path="Page"
+                        aria-label="Грегорио ди Чекко">Грегорио ди&nbsp;Чекко</button></li>
+                    <li class="tabs__item"><button class="btn-reset tabs__btn tabs__btn_Page" data-tabs-path="Page"
+                        aria-label="Джованни да&nbsp;Удине">Джованни да&nbsp;Удине</button></li>
+                    <li class="tabs__item"><button class="btn-reset tabs__btn tabs__btn_Page" data-tabs-path="Page"
+                        aria-label="Джованни ди&nbsp;Паоло">Джованни ди&nbsp;Паоло</button></li>
+                    <li class="tabs__item"><button class="btn-reset tabs__btn tabs__btn_Page" data-tabs-path="Page"
+                        aria-label="Джорджоне">Джорджоне</button></li>
+                    <li class="tabs__item"><button class="btn-reset tabs__btn tabs__btn_Page" data-tabs-path="Page"
+                        aria-label="Парентино, Бернардо">Парентино, Бернардо</button></li>
+                    <li class="tabs__item"><button class="btn-reset tabs__btn tabs__btn_Page" data-tabs-path="Page"
+                        aria-label="Пезеллино">Пезеллино</button></li>
+                    <li class="tabs__item"><button class="btn-reset tabs__btn tabs__btn_Page" data-tabs-path="Page"
+                        aria-label="Пьетро Перуджино">Пьетро Перуджино</button></li>
+                    <li class="tabs__item"><button class="btn-reset tabs__btn tabs__btn_Page" data-tabs-path="Page"
+                        aria-label="Перуцци, Бальдассаре">Перуцци, Бальдассаре</button></li>
+                    <li class="tabs__item"><button class="btn-reset tabs__btn tabs__btn_Page" data-tabs-path="Page"
+                        aria-label="Пизанелло">Пизанелло</button></li>
+                    <li class="tabs__item"><button class="btn-reset tabs__btn tabs__btn_Page" data-tabs-path="Page"
+                        aria-label="Пинтуриккьо">Пинтуриккьо</button></li>
                   </ul>
                 </div>
               </li>

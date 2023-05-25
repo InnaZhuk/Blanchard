@@ -301,6 +301,24 @@ jQuery(document).ready(function () {
   });
 });
 
+// Scroll Tabs
+
+let hiddenElement = document.getElementById("tabs");
+let btn1 = document.querySelector('[data-tabs-path="Benedetto"]');
+let btn2 = document.querySelector('[data-tabs-path="Bergognone, Ambrogio"]');
+let btn3 = document.querySelector('[data-tabs-path="Bissolo, Francesco"]');
+let btn4 = document.querySelector('[data-tabs-path="Domenico"]');
+let btnEmpty = document.querySelector('[data-tabs-path="Page"]');
+function handleButtonClick() {
+  hiddenElement.scrollIntoView({ block: "start", behavior: "smooth" });
+}
+
+btn1.addEventListener('click', handleButtonClick);
+btn2.addEventListener('click', handleButtonClick);
+btn3.addEventListener('click', handleButtonClick);
+btn4.addEventListener('click', handleButtonClick);
+btnEmpty.addEventListener('click', handleButtonClick);
+
 // Modal
 
 // Открыть модальное окно
